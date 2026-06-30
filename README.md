@@ -4,7 +4,7 @@ Static, telemetry-free product, privacy, and support pages for [Deep Shadow](htt
 
 The site has no build step, dependencies, cookies, analytics, forms, remote fonts, or client-side scripts. GitHub Pages publishes the `main` branch root.
 
-The centered echo-ring logo and Store imagery are generated from the private extension repository's vector asset sources.
+The centered echo-ring logo and Store imagery are generated from the private extension repository's vector asset sources. This repository is checked out there as the `website/` submodule, so shared public assets are written and tracked here instead of duplicated across both repositories.
 
 Chrome Web Store item ID: `cpbepidgmlfhcinlofagpfemhglgbiia`. The initial release is currently under review.
 
