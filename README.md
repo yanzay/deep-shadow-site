@@ -6,6 +6,4 @@ The site has no build step, dependencies, cookies, analytics, forms, remote font
 
 The centered echo-ring logo and Store imagery are generated from the private extension repository's vector asset sources. This repository is checked out there as the `website/` submodule, so shared public assets are written and tracked here instead of duplicated across both repositories.
 
-Chrome Web Store item ID: `cpbepidgmlfhcinlofagpfemhglgbiia`. The initial release is currently under review.
-
-After the Chrome Web Store item becomes public, replace both “release coming soon” calls to action with the permanent Store listing URL and update the support page to include the Store support hub.
+Chrome Web Store item ID: `cpbepidgmlfhcinlofagpfemhglgbiia`. The extension is available at [its public Store listing](https://chromewebstore.google.com/detail/cpbepidgmlfhcinlofagpfemhglgbiia).
