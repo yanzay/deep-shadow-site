@@ -25,7 +25,7 @@
     </header>
 
     <main id="main" class="page-main legal">
-      <p class="eyebrow">Effective June 29, 2026</p>
+      <p class="eyebrow">Effective July 1, 2026</p>
       <h1>Privacy policy.</h1>
       <p class="page-intro">
         Deep Shadow is a Chrome extension for practicing English rhythm and
@@ -37,6 +37,7 @@
       <p>Deep Shadow processes the following information only to provide its visible practice features:</p>
       <ul>
         <li>The active YouTube page URL, video title, caption text and timings, and current playback state.</li>
+        <li>YouTube tab audio while the user enables optional Precise timing, processed transiently to refine the active phrase’s start and end.</li>
         <li>Microphone audio captured after the user explicitly enables microphone access and only during the learner’s speaking turn.</li>
       </ul>
 
@@ -44,25 +45,29 @@
       <p>
         Video information is used to divide captions into phrases, control the
         selected phrase’s playback, show the current title and captions, and
-        restore the video when practice ends. Microphone audio is used to play
+        restore the video when practice ends. When Precise timing is enabled,
+        YouTube tab audio levels are analyzed locally to refine phrase
+        boundaries. Microphone audio is used to play
         the learner’s take immediately after the original phrase so the learner
         can compare them.
       </p>
 
       <h2>Local processing and retention</h2>
       <p>
-        Microphone audio remains in memory on the user’s device. It is played for
-        the active comparison and discarded after the repetition or when the
-        practice session ends. Deep Shadow does not save voice history. Captions,
-        video titles, URLs, and playback state are not stored by Deep Shadow after
-        the active session.
+        YouTube tab audio is analyzed as it plays and is not recorded or retained;
+        only refined start and end timestamps remain in memory for the active video
+        session. Microphone audio remains in memory on the user’s device. It is
+        played for the active comparison and discarded after the repetition or
+        when the practice session ends. Deep Shadow does not save voice history.
+        Captions, video titles, URLs, playback state, and refined timestamps are
+        not stored by Deep Shadow after the active session.
       </p>
 
       <h2>Network use and sharing</h2>
       <p>
         Deep Shadow communicates directly with YouTube over HTTPS to load the
         selected video page and its caption data. Deep Shadow does not send
-        microphone audio, captions, URLs, titles, playback activity, identifiers,
+        YouTube tab audio, microphone audio, captions, URLs, titles, playback activity, identifiers,
         or usage events to the developer or to any developer-controlled service.
         No user information is sold, shared for advertising, transferred for
         unrelated purposes, or used to determine creditworthiness.
@@ -71,12 +76,15 @@
       <h2>Permissions</h2>
       <ul>
         <li><strong>Side panel:</strong> displays the listen, speak, compare, and playback controls beside the active video.</li>
+        <li><strong>Active tab:</strong> allows a toolbar click to open Deep Shadow for the selected YouTube tab and, when already authorized, start optional Precise timing for that tab.</li>
+        <li><strong>Tab capture (optional):</strong> analyzes the selected YouTube tab’s audio locally for cleaner phrase boundaries. Audio is not recorded, saved, or uploaded.</li>
         <li><strong>YouTube site access:</strong> reads captions and controls playback only on YouTube pages so the user can practice one phrase at a time.</li>
         <li><strong>Microphone:</strong> records the learner only during a speaking turn for immediate on-device playback and comparison. Audio is not uploaded or saved.</li>
       </ul>
       <p>
-        Users can revoke microphone permission through Chrome settings, disable
-        YouTube site access, disable the extension, or uninstall it at any time.
+        Users can turn off Precise timing in the side panel, revoke tab-capture or
+        microphone permission through Chrome settings, disable YouTube site access,
+        disable the extension, or uninstall it at any time.
       </p>
 
       <h2>Chrome Web Store Limited Use</h2>
