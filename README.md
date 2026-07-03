@@ -1,6 +1,6 @@
 # Deep Shadow site
 
-Static, telemetry-free product, privacy, and support pages for [Deep Shadow](https://yanzay.github.io/deep-shadow-site/).
+Static product, privacy, and support pages for [Deep Shadow](https://yanzay.github.io/deep-shadow-site/).
 
 The site has no build step, dependencies, cookies, analytics, forms, remote fonts, or client-side scripts. GitHub Pages publishes the `main` branch root.
 
