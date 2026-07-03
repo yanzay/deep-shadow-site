@@ -46,15 +46,17 @@
         Video information is used to divide captions into phrases, control the
         selected phrase’s playback, show the current title and captions, and
         restore the video when practice ends. When Precise timing is enabled,
-        YouTube tab audio levels are analyzed locally to refine phrase
-        boundaries. Microphone audio is used to play
+        YouTube tab audio levels are analyzed locally while selected phrases
+        play, and the captured stream is relayed locally to the default audio
+        output. Microphone audio is captured only during the
+        learner’s speaking turn, released before comparison playback, and used to play
         the learner’s take immediately after the original phrase so the learner
         can compare them.
       </p>
 
       <h2>Local processing and retention</h2>
       <p>
-        YouTube tab audio is analyzed as it plays and is not recorded or retained;
+        YouTube tab audio is analyzed as selected phrases play and is not recorded or retained;
         only refined start and end timestamps remain in memory for the active video
         session. Microphone audio remains in memory on the user’s device. It is
         played for the active comparison and discarded after the repetition or
@@ -76,8 +78,8 @@
       <h2>Permissions</h2>
       <ul>
         <li><strong>Side panel:</strong> displays the listen, speak, compare, and playback controls beside the active video.</li>
-        <li><strong>Active tab:</strong> allows a toolbar click to open Deep Shadow for the selected YouTube tab and, when already authorized, start optional Precise timing for that tab.</li>
-        <li><strong>Tab capture (optional):</strong> analyzes the selected YouTube tab’s audio locally for cleaner phrase boundaries. Audio is not recorded, saved, or uploaded.</li>
+        <li><strong>Active tab:</strong> allows a toolbar click to open Deep Shadow for the selected YouTube tab.</li>
+        <li><strong>Tab capture (optional):</strong> analyzes the selected YouTube tab’s audio locally for cleaner phrase boundaries while Precise timing is enabled. Audio is not recorded, saved, or uploaded.</li>
         <li><strong>YouTube site access:</strong> reads captions and controls playback only on YouTube pages so the user can practice one phrase at a time.</li>
         <li><strong>Microphone:</strong> records the learner only during a speaking turn for immediate on-device playback and comparison. Audio is not uploaded or saved.</li>
       </ul>
